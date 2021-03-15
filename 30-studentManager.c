@@ -196,7 +196,7 @@ void removeStudentByPos (char id[][MAX], char name[][MAX], int yob[], double poi
         printf("\nStudent before removing:");
         printf("\n%-10s| %-20s| %4d| %5.2lf", id[pos], name[pos], yob[pos], point[pos]);
         
-        for (int i=pos; i<=size-1;i++){
+        for (int i=pos; i<=*size-1;i++){
             strcpy (id[i],id[i+1]);
             strcpy(name[i], name[i+1]);
             yob[i]= yob[i+1];
